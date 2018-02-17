@@ -26,7 +26,7 @@ class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
         titleLabel.textAlignment = .center
         titleLabel.textColor = .orange
         
-   //   view.backgroundColor = .green
+   //   Need to remove this button and replace with navigator
         
        logOutBtn.setTitle("Sign Out", for: .normal)
        logOutBtn.setTitleColor(.black, for: .normal)
@@ -34,8 +34,6 @@ class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
        logOutBtn.addTarget(self, action: #selector(logOut), for: .touchUpInside)
         
         view.addSubview(logOutBtn)
-        
-     
     }
     
     @objc func logOut() {

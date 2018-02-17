@@ -5,9 +5,16 @@
 //
 
 import UIKit
+import MediaPlayer
+
 
 class GameCardViewController: UIViewController {
 
+    
+    MPMoviePlayerViewController * _player;
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,4 +37,9 @@ class GameCardViewController: UIViewController {
     }
     */
 
+    @IBAction func playBtnTapped(_ sender: Any) {
+        //play button code
+        NSURL = [NSURL (fileURLWithPath: ""<#T##String#>"")]
+        _player =
+    }
 }

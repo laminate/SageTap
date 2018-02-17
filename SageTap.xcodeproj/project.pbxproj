@@ -22,10 +22,14 @@
 		23649B2F203543C00047CDB3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23649B2E203543C00047CDB3 /* LoginViewController.xib */; };
 		23C3844F2033A5CD007C0449 /* GameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3844D2033A5CD007C0449 /* GameCardViewController.swift */; };
 		23C384502033A5CD007C0449 /* GameCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C3844E2033A5CD007C0449 /* GameCardViewController.xib */; };
-		23C384542033A9A9007C0449 /* xxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C384522033A9A9007C0449 /* xxViewController.xib */; };
 		23C384582033CD74007C0449 /* VerifyCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C384562033CD74007C0449 /* VerifyCodeViewController.xib */; };
 		23C3845C2033CF21007C0449 /* LoggedInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C3845A2033CF21007C0449 /* LoggedInViewController.xib */; };
 		23FF3A832035E7460068494C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FF3A822035E7450068494C /* GoogleService-Info.plist */; };
+		23FF3A8920362CEC0068494C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF3A8720362CEC0068494C /* UserProfileViewController.swift */; };
+		23FF3A8A20362CEC0068494C /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FF3A8820362CEC0068494C /* UserProfileViewController.xib */; };
+		23FF3A8D2036322B0068494C /* CreateUserProfileNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF3A8B2036322B0068494C /* CreateUserProfileNameViewController.swift */; };
+		23FF3A8E2036322B0068494C /* CreateUserProfileNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */; };
+		23FF3A9020363EEB0068494C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FF3A8F20363EEB0068494C /* MediaPlayer.framework */; };
 		FE9B0D96797B43238F174815 /* Pods_SageTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +52,15 @@
 		238A448474D8E5ECCAF01E42 /* Pods-SageTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageTap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SageTap/Pods-SageTap.debug.xcconfig"; sourceTree = "<group>"; };
 		23C3844D2033A5CD007C0449 /* GameCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardViewController.swift; sourceTree = "<group>"; };
 		23C3844E2033A5CD007C0449 /* GameCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCardViewController.xib; sourceTree = "<group>"; };
-		23C384522033A9A9007C0449 /* xxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = xxViewController.xib; sourceTree = "<group>"; };
 		23C384562033CD74007C0449 /* VerifyCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyCodeViewController.xib; sourceTree = "<group>"; };
 		23C3845A2033CF21007C0449 /* LoggedInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoggedInViewController.xib; sourceTree = "<group>"; };
 		23FF3A822035E7450068494C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23FF3A862035F2D70068494C /* SageTap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SageTap.entitlements; sourceTree = "<group>"; };
+		23FF3A8720362CEC0068494C /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		23FF3A8820362CEC0068494C /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		23FF3A8B2036322B0068494C /* CreateUserProfileNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserProfileNameViewController.swift; sourceTree = "<group>"; };
+		23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateUserProfileNameViewController.xib; sourceTree = "<group>"; };
+		23FF3A8F20363EEB0068494C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SageTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21FA93E2E51BB9879002D7B /* Pods-SageTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageTap.release.xcconfig"; path = "Pods/Target Support Files/Pods-SageTap/Pods-SageTap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FF3A9020363EEB0068494C /* MediaPlayer.framework in Frameworks */,
 				FE9B0D96797B43238F174815 /* Pods_SageTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +104,10 @@
 				2304240C2032432C007D574E /* AppDelegate.swift */,
 				232E38B120324D110030EB0A /* LoginViewController.swift */,
 				23649B2A20353F280047CDB3 /* VerifyCodeViewController.swift */,
+				23FF3A8B2036322B0068494C /* CreateUserProfileNameViewController.swift */,
 				232E38B320324D150030EB0A /* LoggedInViewController.swift */,
 				23C3844D2033A5CD007C0449 /* GameCardViewController.swift */,
+				23FF3A8720362CEC0068494C /* UserProfileViewController.swift */,
 				232E38B520324D190030EB0A /* SettingsViewController.swift */,
 				232E38B720324D1D0030EB0A /* SplashViewController.swift */,
 				232E38BB20324DA70030EB0A /* AppDelegate + GoogleSignIn.swift */,
@@ -110,7 +121,8 @@
 				23C3845A2033CF21007C0449 /* LoggedInViewController.xib */,
 				23C384562033CD74007C0449 /* VerifyCodeViewController.xib */,
 				23649B2E203543C00047CDB3 /* LoginViewController.xib */,
-				23C384522033A9A9007C0449 /* xxViewController.xib */,
+				23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */,
+				23FF3A8820362CEC0068494C /* UserProfileViewController.xib */,
 			);
 			path = SageTap;
 			sourceTree = "<group>";
@@ -118,6 +130,7 @@
 		315A64F66F98893CAF0EBC47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23FF3A8F20363EEB0068494C /* MediaPlayer.framework */,
 				4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */,
 			);
 			name = Frameworks;
@@ -202,13 +215,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FF3A8E2036322B0068494C /* CreateUserProfileNameViewController.xib in Resources */,
 				23649B2F203543C00047CDB3 /* LoginViewController.xib in Resources */,
 				23C384502033A5CD007C0449 /* GameCardViewController.xib in Resources */,
 				230424172032432C007D574E /* LaunchScreen.storyboard in Resources */,
 				232E38AE20324A910030EB0A /* default.xib in Resources */,
 				23C3845C2033CF21007C0449 /* LoggedInViewController.xib in Resources */,
+				23FF3A8A20362CEC0068494C /* UserProfileViewController.xib in Resources */,
 				23FF3A832035E7460068494C /* GoogleService-Info.plist in Resources */,
-				23C384542033A9A9007C0449 /* xxViewController.xib in Resources */,
 				23C384582033CD74007C0449 /* VerifyCodeViewController.xib in Resources */,
 				230424142032432C007D574E /* Assets.xcassets in Resources */,
 			);
@@ -288,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FF3A8D2036322B0068494C /* CreateUserProfileNameViewController.swift in Sources */,
 				232E38B420324D150030EB0A /* LoggedInViewController.swift in Sources */,
 				232E38B220324D110030EB0A /* LoginViewController.swift in Sources */,
 				232E38BE20324DFF0030EB0A /* MyFirebase.swift in Sources */,
@@ -297,6 +312,7 @@
 				23649B2B20353F280047CDB3 /* VerifyCodeViewController.swift in Sources */,
 				232E38BC20324DA70030EB0A /* AppDelegate + GoogleSignIn.swift in Sources */,
 				232E38B620324D190030EB0A /* SettingsViewController.swift in Sources */,
+				23FF3A8920362CEC0068494C /* UserProfileViewController.swift in Sources */,
 				232E38B820324D1D0030EB0A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

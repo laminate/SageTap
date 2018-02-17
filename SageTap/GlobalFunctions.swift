@@ -29,6 +29,14 @@ func moveToVerifyCodeWindow() {
     appDelegate.window?.rootViewController = VerifyCodeViewController()
 }
 
+func moveToCreateUserProfileNameWindow() {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
+    appDelegate.window?.makeKeyAndVisible()
+    appDelegate.window?.rootViewController = CreateUserProfileNameViewController()
+}
+
 func moveToLoggedInWindow() {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate

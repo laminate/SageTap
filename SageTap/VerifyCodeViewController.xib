@@ -29,17 +29,17 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verification Number" textAlignment="natural" minimumFontSize="20" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-VU-WW9">
-                    <rect key="frame" x="77.5" y="130" width="220.5" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sms code" textAlignment="center" minimumFontSize="36" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-VU-WW9">
+                    <rect key="frame" x="75" y="291" width="225" height="47"/>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
-                    <rect key="frame" x="77.5" y="168" width="220.5" height="30"/>
+                    <rect key="frame" x="75" y="346" width="225" height="30"/>
                     <color key="backgroundColor" red="0.33705148909999999" green="1" blue="0.94493296829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="lq9-H5-l5n"/>
+                        <constraint firstAttribute="height" constant="30" id="ReO-3i-44s"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Verify Now">
@@ -52,14 +52,15 @@
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="3HR-XC-26h"/>
-                <constraint firstItem="5zx-Ax-x7x" firstAttribute="trailing" secondItem="Q1M-VU-WW9" secondAttribute="trailing" id="BTv-DQ-abt"/>
-                <constraint firstItem="5zx-Ax-x7x" firstAttribute="leading" secondItem="Q1M-VU-WW9" secondAttribute="leading" id="WPQ-vD-Hh0"/>
-                <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="fgT-Td-qva" secondAttribute="bottom" constant="66" id="ZKG-6k-put"/>
-                <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cjP-gl-dcV"/>
-                <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="g6h-bJ-OL9"/>
-                <constraint firstAttribute="trailing" secondItem="fgT-Td-qva" secondAttribute="trailing" id="hVD-Ke-tcS"/>
-                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="8" symbolic="YES" id="hXU-uX-Tc8"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="8l9-Xa-Y2i"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F1H-JB-bh8"/>
+                <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R1f-wd-Wn7"/>
+                <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bMf-su-rge"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="291" id="bMn-WL-7sN"/>
+                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="8" symbolic="YES" id="gw1-hM-qyb"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="5zx-Ax-x7x" secondAttribute="leading" id="rYO-r7-YJT"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="xcR-4C-L6M"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="xjc-P6-Uxw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
