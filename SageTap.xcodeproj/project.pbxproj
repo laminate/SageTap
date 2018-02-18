@@ -30,6 +30,7 @@
 		23FF3A8D2036322B0068494C /* CreateUserProfileNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF3A8B2036322B0068494C /* CreateUserProfileNameViewController.swift */; };
 		23FF3A8E2036322B0068494C /* CreateUserProfileNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */; };
 		23FF3A9020363EEB0068494C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FF3A8F20363EEB0068494C /* MediaPlayer.framework */; };
+		F46F0AF12039269D00B5A308 /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F0AF02039269D00B5A308 /* GameCard.swift */; };
 		FE9B0D96797B43238F174815 /* Pods_SageTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		23FF3A8F20363EEB0068494C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SageTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21FA93E2E51BB9879002D7B /* Pods-SageTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageTap.release.xcconfig"; path = "Pods/Target Support Files/Pods-SageTap/Pods-SageTap.release.xcconfig"; sourceTree = "<group>"; };
+		F46F0AF02039269D00B5A308 /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				23649B2E203543C00047CDB3 /* LoginViewController.xib */,
 				23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */,
 				23FF3A8820362CEC0068494C /* UserProfileViewController.xib */,
+				F46F0AF02039269D00B5A308 /* GameCard.swift */,
 			);
 			path = SageTap;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				232E38BC20324DA70030EB0A /* AppDelegate + GoogleSignIn.swift in Sources */,
 				232E38B620324D190030EB0A /* SettingsViewController.swift in Sources */,
 				23FF3A8920362CEC0068494C /* UserProfileViewController.swift in Sources */,
+				F46F0AF12039269D00B5A308 /* GameCard.swift in Sources */,
 				232E38B820324D1D0030EB0A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
