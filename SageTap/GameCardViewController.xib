@@ -12,12 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameCardViewController" customModule="SageTap">
             <connections>
-                <outlet property="option1" destination="Z3H-7t-SX6" id="O6U-wx-lEH"/>
-                <outlet property="option2" destination="TSV-bj-Kbn" id="f8v-4A-E7L"/>
-                <outlet property="option3" destination="Hqg-oe-ee0" id="ZCR-Qb-x0J"/>
-                <outlet property="option4" destination="HMs-H6-QRT" id="rUc-Ne-uxu"/>
-                <outlet property="question" destination="d01-gd-4l4" id="irQ-k8-zSF"/>
-                <outlet property="timer" destination="gl1-Ib-Lnn" id="Bzb-Nv-CGT"/>
+                <outlet property="option1Outlet" destination="Z3H-7t-SX6" id="ugF-Ce-vzi"/>
+                <outlet property="option2Outlet" destination="TSV-bj-Kbn" id="byR-Il-6zc"/>
+                <outlet property="option3Outlet" destination="Hqg-oe-ee0" id="cqC-C0-rXz"/>
+                <outlet property="option4Outlet" destination="HMs-H6-QRT" id="MJe-IZ-b2j"/>
+                <outlet property="questionOutlet" destination="d01-gd-4l4" id="lBi-Dk-kcf"/>
+                <outlet property="timerOutlet" destination="gl1-Ib-Lnn" id="dvH-HM-T30"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,9 +54,6 @@
                     <state key="normal" title="Play">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
-                    <connections>
-                        <action selector="playBtnTapped:" destination="-1" eventType="touchUpInside" id="sW1-m8-cbb"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d01-gd-4l4">
                     <rect key="frame" x="0.0" y="144" width="375" height="244"/>
