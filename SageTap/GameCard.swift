@@ -12,11 +12,12 @@ class GameCard {
     
     var answer: Int = 0
     var question: String = ""
-    var options: Array<Any> = []
+    var options: NSArray = []
     
     func initWithDict(aDict: [String: AnyObject]) {
+        
         self.answer = (aDict["answer"] as! NSString).integerValue
         self.question = aDict["question"] as! String
-        self.options = aDict["options"] as! Array<Any>
+        self.options = aDict["options"] as! NSArray
     }
 }

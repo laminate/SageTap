@@ -38,6 +38,7 @@ class GameCardViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Initialize variables
+        self.options.append(UIButton())
         self.options.append(option1Outlet)
         self.options.append(option2Outlet)
         self.options.append(option3Outlet)
@@ -65,9 +66,22 @@ class GameCardViewController: UIViewController {
                 let dataChange = card_snap.value as? [String:AnyObject]
                 self.activeCard = GameCard()
                 self.activeCard.initWithDict(aDict: dataChange!)
+                self.startGame()
+                
             })
             
         })
+    }
+    
+    func startGame() {
+        self.questionOutlet.text = self.activeCard.question
+        
+        for index in 1...4 {
+            self.options[index].setTitle(self.activeCard.options[index] as? String, for: .normal)
+        }
+        
+        
+    
     }
 
     
