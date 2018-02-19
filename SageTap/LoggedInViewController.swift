@@ -10,6 +10,9 @@ import GoogleSignIn
 
 class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
     
+    @IBAction func gotogamcard(_ sender: Any) {
+        moveToGameCardWindow()
+    }
     let logOutBtn = UIButton(frame: CGRect(x: 10, y: 35, width: 200, height: 30))
     let signOutButton = UIButton()
     

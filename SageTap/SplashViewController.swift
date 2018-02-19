@@ -24,7 +24,7 @@ class SplashViewController: UIViewController {
         
 
         
-        view.backgroundColor = .orange
+        view.backgroundColor = .black
     }
     
 }

@@ -36,11 +36,17 @@
                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
-                    <rect key="frame" x="16" y="193" width="343" height="30"/>
-                    <color key="backgroundColor" red="0.33705148909999999" green="1" blue="0.94493296829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FNTSYlogo" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-xs-HGN">
+                    <rect key="frame" x="16" y="572" width="343" height="75"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="ZM5-gV-JhG"/>
+                        <constraint firstAttribute="height" constant="75" id="Ypd-6N-CfR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
+                    <rect key="frame" x="16" y="192" width="343" height="42"/>
+                    <color key="backgroundColor" red="0.044553779065608978" green="0.83508628606796265" blue="0.23315194249153137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="ZM5-gV-JhG"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="Sign In With Phone">
@@ -51,20 +57,26 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.99536198377609253" green="0.16302886605262756" blue="0.0083967586979269981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="18G-hw-eSL"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="4ci-YL-W5O"/>
                 <constraint firstAttribute="trailing" secondItem="fgT-Td-qva" secondAttribute="trailing" id="5fN-bb-sVd"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="7po-7n-lj4"/>
+                <constraint firstAttribute="bottom" secondItem="vWR-xs-HGN" secondAttribute="bottom" constant="20" symbolic="YES" id="HGK-Yy-KBd"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="fgT-Td-qva" secondAttribute="bottom" constant="66" id="b7d-k0-34F"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="g6h-bJ-OL9"/>
+                <constraint firstItem="vWR-xs-HGN" firstAttribute="leading" secondItem="5zx-Ax-x7x" secondAttribute="leading" id="m3p-Hg-1AG"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="mBs-mI-6bp"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="5zx-Ax-x7x" secondAttribute="leading" id="po8-LV-x8W"/>
-                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="8" symbolic="YES" id="sIN-ps-v1n"/>
+                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="15" id="sIN-ps-v1n"/>
+                <constraint firstItem="vWR-xs-HGN" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="z0D-SB-aqI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="FNTSYlogo" width="233" height="56"/>
+    </resources>
 </document>

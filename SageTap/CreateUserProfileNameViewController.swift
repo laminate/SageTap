@@ -22,9 +22,12 @@ class CreateUserProfileNameViewController: UIViewController {
         
 //NEED TO ADD a USER GAME ID that will reside in profile db
         
-        moveToLoggedInWindow()
+        //wait time set to +X seconds ***
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4){
         
-        
+            moveToLoggedInWindow() }
+          //wait time set to +X seconds ***
+
     }
 
 }

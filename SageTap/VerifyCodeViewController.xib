@@ -30,14 +30,14 @@
                     </items>
                 </navigationBar>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sms code" textAlignment="center" minimumFontSize="36" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-VU-WW9">
-                    <rect key="frame" x="75" y="291" width="225" height="47"/>
+                    <rect key="frame" x="75" y="109" width="225" height="47"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
-                    <rect key="frame" x="75" y="346" width="225" height="30"/>
-                    <color key="backgroundColor" red="0.33705148909999999" green="1" blue="0.94493296829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="75" y="179" width="225" height="30"/>
+                    <color key="backgroundColor" red="0.9771634615" green="0.2135573664" blue="0.28478399300000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ReO-3i-44s"/>
                     </constraints>
@@ -49,15 +49,19 @@
                         <action selector="verifyCodeBtn:" destination="-1" eventType="touchUpInside" id="2gU-ay-3uk"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rotologo" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-9g-7Sq">
+                    <rect key="frame" x="16" y="572" width="343" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="8l9-Xa-Y2i"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F1H-JB-bh8"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R1f-wd-Wn7"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bMf-su-rge"/>
-                <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="291" id="bMn-WL-7sN"/>
-                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="8" symbolic="YES" id="gw1-hM-qyb"/>
+                <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="bMn-WL-7sN"/>
+                <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="23" id="gw1-hM-qyb"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="5zx-Ax-x7x" secondAttribute="leading" id="rYO-r7-YJT"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="xcR-4C-L6M"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="xjc-P6-Uxw"/>
@@ -66,4 +70,7 @@
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="rotologo" width="414" height="84"/>
+    </resources>
 </document>

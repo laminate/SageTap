@@ -7,11 +7,14 @@
 import UIKit
 import MediaPlayer
 import Firebase
+import WebKit
 
 class GameCardViewController: UIViewController {
 
     
-    //MPMoviePlayerViewController * _player;
+    @IBAction func `return`(_ sender: Any) {
+        moveToLoggedInWindow()
+    }
     
 
     //Outlets
@@ -21,6 +24,7 @@ class GameCardViewController: UIViewController {
     @IBOutlet weak var option2Outlet: UIButton!
     @IBOutlet weak var option3Outlet: UIButton!
     @IBOutlet weak var option4Outlet: UIButton!
+    @IBOutlet weak var timerLabel: UILabel!
     
     
     //Class vars
@@ -29,13 +33,30 @@ class GameCardViewController: UIViewController {
     var activeCard:GameCard = GameCard()
     var game_on = false
     
+    
+    var countdownTimer: Timer!
+    var totalTime = 900
+    
+    
+    
+    
     //firebase ref
     var ref: DatabaseReference!
     
+    //VIDEO ****
+    
+    @IBOutlet weak var webview: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://www.youtube.com/watch?v=0-w47wgdhso")
+        let request = URLRequest(url: url!)
+        
+        webview.load(request)
+    
+        //VIDEO ****
 
-        // Do any additional setup after loading the view.
         
         //Initialize variables
         self.options.append(UIButton())
@@ -80,9 +101,44 @@ class GameCardViewController: UIViewController {
             self.options[index].setTitle(self.activeCard.options[index] as? String, for: .normal)
         }
         
+        //TIMER ***
+        timerLabel.text = ""
         
-    
     }
-
+    
+    func startTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTime() {
+        timerLabel.text = "\(timeFormatted(totalTime))"
+        
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+        }
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        
+        //     let hours: Int = totalSeconds / 3600
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
+    @IBAction func startTimerPressed(_ sender: UIButton) {
+        timerLabel.text = "totalTime"
+        startTimer()
+    }
+        //TIMER ***
     
 }
+
+
+

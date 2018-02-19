@@ -42,7 +42,7 @@ func moveToLoggedInWindow() {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
     appDelegate.window?.makeKeyAndVisible()
-    appDelegate.window?.rootViewController = GameCardViewController()
+    appDelegate.window?.rootViewController = LoggedInViewController()
 }
 
 func moveToSettingsWindow() {
