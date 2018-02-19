@@ -15,25 +15,11 @@ class LoginViewController: UIViewController{ //},FUIAuthDelegate {
         var userId: String = ""
     
     @IBOutlet weak var phoneNum: UITextField!
-    
-    
-  let anonLoginBtn = UIButton()
-    
-        override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    
-        
-        anonLoginBtn.setTitle("Just Watch", for: .normal)
-        anonLoginBtn.adjustsImageWhenHighlighted = true
-        anonLoginBtn.setTitleColor(UIColor.white, for: .normal)
-        anonLoginBtn.backgroundColor = UIColor.black
-        anonLoginBtn.frame = CGRect(x: view.frame.width/2 - 150, y: view.frame.height/2 + 36, width: 300, height: 36)
-        view.addSubview(anonLoginBtn)
-        anonLoginBtn.addTarget(self, action: #selector(signInAnon), for: .touchUpInside)
-       
+    @IBAction func justWatchButton(_ sender: Any) {
+        self.signInAnon()
+        performSegue(withIdentifier: "AnonymousLogin", sender: self)
     }
+    
     
     //Firebase Phone Authorization*********
     @IBAction func sendCode(_ sender: UIButton) {
@@ -46,7 +32,7 @@ class LoginViewController: UIViewController{ //},FUIAuthDelegate {
                 let defaults = UserDefaults.standard
                 defaults.set(verificationID, forKey: "authVID")
          //       self.performSegue(withIdentifier: "VerifyCodeViewController", sender: Any?.self)
-                  moveToVerifyCodeWindow()
+                  //moveToVerifyCodeWindow()
                 }
             }
         }
@@ -75,5 +61,13 @@ class LoginViewController: UIViewController{ //},FUIAuthDelegate {
     
         
     }
+    
+    /**
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "Segue identifier set in storyboard") {
+            // Put your code here or call onLogoutClick(null)
+        }
+    }
+    **/
 }
 

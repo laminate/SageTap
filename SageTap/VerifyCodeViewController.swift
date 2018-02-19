@@ -33,7 +33,7 @@ class VerifyCodeViewController: UIViewController {
                 let userInfo = user?.providerData[0]
                 print("Provider ID: \(String(describing: userInfo?.providerID))")
                 //self.performSegue(withIdentifier: "LoggedInViewController", sender: Any?.self)
-                moveToCreateUserProfileNameWindow()
+                //moveToCreateUserProfileNameWindow()
         }
       }
     }

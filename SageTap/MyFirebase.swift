@@ -37,9 +37,9 @@ class MyFirebase {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 
                     if loggedIn {
-                        moveToLoggedInWindow()
+                        //moveToLoggedInWindow()
                     } else {
-                        moveToLoginWindow()
+                        //moveToLoginWindow()
                     }
                 }
             }
@@ -54,7 +54,7 @@ class MyFirebase {
                     // LOAD ANY DATA HERE
                      //wait time set to +X seconds below
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        moveToLoggedInWindow()
+                        //moveToLoggedInWindow()
                     }
                 }
             }
