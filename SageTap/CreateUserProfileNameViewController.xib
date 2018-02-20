@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateUserProfileNameViewController" customModule="SageTap" customModuleProvider="target">
             <connections>
+                <outlet property="userGameID" destination="Nit-E9-AUp" id="kzY-8E-gsL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,59 +22,78 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-Ob-66H">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                    <items>
-                        <navigationItem title="Sage Tap" id="Q7p-wx-Xk2">
-                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="mSL-rx-cDc"/>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-E9-AUp">
-                    <rect key="frame" x="16" y="130" width="343" height="47"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create your game name" textAlignment="natural" minimumFontSize="36" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-E9-AUp">
+                    <rect key="frame" x="16" y="134" width="343" height="47"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-5Y-o8m">
-                    <rect key="frame" x="16" y="193" width="343" height="30"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="9bT-Lr-0bZ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                    <state key="normal" title="Create Game ID">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgridlogo" highlightedImage="sportsgridlogo" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-i7-dsZ">
-                    <rect key="frame" x="16" y="572" width="343" height="75"/>
+                    <rect key="frame" x="0.0" y="572" width="375" height="75"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="3Tg-Lp-lyl"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-rE-Ywz">
+                    <rect key="frame" x="16" y="189" width="343" height="45"/>
+                    <color key="backgroundColor" red="0.99942058320000005" green="0.1122743264" blue="0.1069748029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="XCB-Dp-DLO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                    <state key="normal" title="My Game Name">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="mygamenameBtnTppd:" destination="-1" eventType="touchUpInside" id="iek-XH-wQg"/>
+                        <action selector="userIDBtn:" destination="-1" eventType="touchUpInside" id="oNp-Pz-BCx"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-Ob-66H">
+                    <rect key="frame" x="16" y="20" width="343" height="44"/>
+                    <items>
+                        <navigationItem title="Sage Tap" id="Q7p-wx-Xk2">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="mSL-rx-cDc">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="aeD-i7-dsZ" firstAttribute="leading" secondItem="LJj-5Y-o8m" secondAttribute="leading" id="6bq-l5-57U"/>
-                <constraint firstItem="aeD-i7-dsZ" firstAttribute="trailing" secondItem="LJj-5Y-o8m" secondAttribute="trailing" id="FEZ-df-tzE"/>
-                <constraint firstItem="Nit-E9-AUp" firstAttribute="centerX" secondItem="d5E-Ob-66H" secondAttribute="centerX" id="Fna-d3-WGU"/>
-                <constraint firstItem="aeD-i7-dsZ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="PCG-DQ-neZ"/>
-                <constraint firstItem="Nit-E9-AUp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="aaB-YP-cdS"/>
-                <constraint firstItem="LJj-5Y-o8m" firstAttribute="top" secondItem="Nit-E9-AUp" secondAttribute="bottom" constant="16" id="hlh-V8-9Qb"/>
-                <constraint firstItem="Nit-E9-AUp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="iw1-M4-DbD"/>
-                <constraint firstItem="Nit-E9-AUp" firstAttribute="leading" secondItem="LJj-5Y-o8m" secondAttribute="leading" id="lfI-Q2-vpT"/>
-                <constraint firstItem="Nit-E9-AUp" firstAttribute="top" secondItem="d5E-Ob-66H" secondAttribute="bottom" constant="66" id="nps-5W-eYm"/>
-                <constraint firstItem="LJj-5Y-o8m" firstAttribute="centerX" secondItem="d5E-Ob-66H" secondAttribute="centerX" id="ocr-Ll-cAv"/>
-                <constraint firstAttribute="bottom" secondItem="aeD-i7-dsZ" secondAttribute="bottom" constant="20" symbolic="YES" id="qmn-Xt-ooI"/>
-                <constraint firstItem="d5E-Ob-66H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tUy-nC-jxt"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="trailing" secondItem="d5E-Ob-66H" secondAttribute="trailing" id="9Xm-bB-Etz"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="trailing" secondItem="DhX-rE-Ywz" secondAttribute="trailing" id="Bzk-jr-MbG"/>
+                <constraint firstItem="d5E-Ob-66H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GFF-nC-YRd"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="top" secondItem="d5E-Ob-66H" secondAttribute="bottom" constant="70" id="PQG-hw-JQn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aeD-i7-dsZ" secondAttribute="bottom" constant="20" id="PqM-np-7ni"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="top" secondItem="d5E-Ob-66H" secondAttribute="bottom" constant="70" id="R4h-AP-kKC"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="top" secondItem="d5E-Ob-66H" secondAttribute="bottom" constant="70" id="XDR-YJ-ty1"/>
+                <constraint firstAttribute="bottom" secondItem="aeD-i7-dsZ" secondAttribute="bottom" constant="20" symbolic="YES" id="YfU-v9-LUB"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d9P-8B-nkW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nit-E9-AUp" secondAttribute="trailing" constant="16" id="ez0-Mj-V7I"/>
+                <constraint firstItem="DhX-rE-Ywz" firstAttribute="leading" secondItem="d5E-Ob-66H" secondAttribute="leading" id="fwX-bu-Vah"/>
+                <constraint firstItem="aeD-i7-dsZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iDo-3f-eYe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d5E-Ob-66H" secondAttribute="trailing" constant="16" id="kO2-TB-2be"/>
+                <constraint firstItem="Nit-E9-AUp" firstAttribute="leading" secondItem="DhX-rE-Ywz" secondAttribute="leading" id="lQl-04-R03"/>
+                <constraint firstItem="d5E-Ob-66H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mEM-0C-gDL"/>
+                <constraint firstItem="d5E-Ob-66H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nRA-fO-SY9"/>
+                <constraint firstItem="aeD-i7-dsZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ok1-sz-xhz"/>
+                <constraint firstItem="d5E-Ob-66H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="qZI-ol-6Rn"/>
+                <constraint firstItem="DhX-rE-Ywz" firstAttribute="top" secondItem="Nit-E9-AUp" secondAttribute="bottom" constant="8" symbolic="YES" id="sty-N4-JmC"/>
                 <constraint firstItem="aeD-i7-dsZ" firstAttribute="centerX" secondItem="d5E-Ob-66H" secondAttribute="centerX" id="ug0-tM-5IZ"/>
+                <constraint firstItem="d5E-Ob-66H" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="wRs-aF-tQF"/>
+                <constraint firstItem="DhX-rE-Ywz" firstAttribute="top" secondItem="Nit-E9-AUp" secondAttribute="bottom" constant="8" id="wjn-LK-F10"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="87.5"/>
         </view>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WWd-Vl-9bX">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="scM-sU-VON">
             <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <state key="normal" title="Button"/>

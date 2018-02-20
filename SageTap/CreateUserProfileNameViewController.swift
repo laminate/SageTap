@@ -10,23 +10,34 @@ import UIKit
 
 class CreateUserProfileNameViewController: UIViewController {
 
+    @IBOutlet weak var userGameID: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+  
+    @IBAction func userIDBtn(_ sender: Any) {
+            if userGameID.text != ""
+            {
+                moveToLoggedInWindow()
+        }
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let LoggedInViewController = segue.destination as! LoggedInViewController
+                    
+        LoggedInViewController.usergameid = userGameID.text!
+                    
+        }
+    
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
-//NEED TO ADD a USER GAME ID that will reside in profile db
-        
-        //wait time set to +X seconds ***
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4){
-        
-            moveToLoggedInWindow() }
-          //wait time set to +X seconds ***
 
     }
 
