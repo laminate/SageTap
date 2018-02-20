@@ -23,7 +23,7 @@ class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-         userGameID.text = usergameid
+
         
         navigationItem.title = "Sage Tap"
         navigationController?.navigationBar.isTranslucent = false

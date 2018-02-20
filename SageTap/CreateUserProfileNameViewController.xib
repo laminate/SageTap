@@ -13,7 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateUserProfileNameViewController" customModule="SageTap" customModuleProvider="target">
             <connections>
-                <outlet property="userGameID" destination="Nit-E9-AUp" id="kzY-8E-gsL"/>
+                <outlet property="userGameID" destination="Nit-E9-AUp" id="7aJ-Ix-w6X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

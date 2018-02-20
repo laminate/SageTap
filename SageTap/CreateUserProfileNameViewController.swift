@@ -9,8 +9,14 @@
 import UIKit
 
 class CreateUserProfileNameViewController: UIViewController {
-
+    
+    
+    
+ 
     @IBOutlet weak var userGameID: UITextField!
+    
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +32,7 @@ class CreateUserProfileNameViewController: UIViewController {
         }
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let LoggedInViewController = segue.destination as! LoggedInViewController
-                    
-        LoggedInViewController.usergameid = userGameID.text!
-                    
-        }
-    
+   
 
     
     override func didReceiveMemoryWarning() {
