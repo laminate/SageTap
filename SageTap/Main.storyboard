@@ -43,6 +43,10 @@
                                 <state key="normal" title="Sign In With Phone">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendCode:" destination="Fxg-Uy-AXk" eventType="touchUpInside" id="tpc-q9-tmI"/>
+                                    <segue destination="kik-IR-7G0" kind="show" identifier="VerifyCodeSegue" id="CXE-ze-gyf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4n-g0-YPD">
                                 <rect key="frame" x="63" y="302" width="249" height="63"/>
@@ -73,6 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="Nqb-I9-PuW"/>
                     </view>
                     <connections>
+                        <outlet property="phoneNum" destination="azm-Qd-jbV" id="Xmj-M9-qqy"/>
                         <segue destination="65T-Lk-nr5" kind="show" identifier="AnonymousLogin" id="Rcr-WR-5Wa"/>
                     </connections>
                 </viewController>
@@ -80,10 +85,144 @@
             </objects>
             <point key="canvasLocation" x="-682.39999999999998" y="-192.05397301349328"/>
         </scene>
+        <!--Verify Code View Controller-->
+        <scene sceneID="T8d-zO-I51">
+            <objects>
+                <viewController id="kik-IR-7G0" customClass="VerifyCodeViewController" customModule="SageTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="K0i-MC-MU7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyf-4I-ww4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Sage Tap" id="dth-L2-1gB">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8en-j4-O5E"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sms code" textAlignment="center" minimumFontSize="36" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-Qi-NKx">
+                                <rect key="frame" x="75" y="291" width="225" height="47"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4A4-oo-hna">
+                                <rect key="frame" x="75" y="346" width="225" height="30"/>
+                                <color key="backgroundColor" red="0.33705148909999999" green="1" blue="0.94493296829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lIY-Dw-M9c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Verify Now">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifyCodeBtn:" destination="kik-IR-7G0" eventType="touchUpInside" id="rOa-I1-gMA"/>
+                                    <segue destination="NvM-6A-lRe" kind="show" identifier="VerifiedSeque" id="ZiF-jV-oIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="trailing" secondItem="4A4-oo-hna" secondAttribute="trailing" id="1pm-8g-XFe"/>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="top" secondItem="K0i-MC-MU7" secondAttribute="top" constant="291" id="GSm-IM-WHM"/>
+                            <constraint firstItem="Kyf-4I-ww4" firstAttribute="leading" secondItem="K0i-MC-MU7" secondAttribute="leading" id="Iuf-cv-0S2"/>
+                            <constraint firstItem="4A4-oo-hna" firstAttribute="top" secondItem="tbC-Qi-NKx" secondAttribute="bottom" constant="8" symbolic="YES" id="JHT-qu-aHv"/>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="centerX" secondItem="Kyf-4I-ww4" secondAttribute="centerX" id="Sdy-bv-JxW"/>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="leading" secondItem="ki4-FG-dKA" secondAttribute="leading" constant="75" id="T6f-fI-ugM"/>
+                            <constraint firstItem="Kyf-4I-ww4" firstAttribute="top" secondItem="ki4-FG-dKA" secondAttribute="top" id="dPk-gw-42c"/>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="leading" secondItem="4A4-oo-hna" secondAttribute="leading" id="f8k-L3-FYv"/>
+                            <constraint firstItem="tbC-Qi-NKx" firstAttribute="centerX" secondItem="K0i-MC-MU7" secondAttribute="centerX" id="xnm-1c-opJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ki4-FG-dKA"/>
+                    </view>
+                    <connections>
+                        <outlet property="verifyCode" destination="tbC-Qi-NKx" id="mQ7-OO-Aro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBc-rq-vy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-192"/>
+        </scene>
+        <!--LoggedIn View Controller-->
+        <scene sceneID="D3f-2m-SzW">
+            <objects>
+                <viewController title="LoggedIn View Controller" id="NvM-6A-lRe" customClass="LoggedInViewController" customModule="SageTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RM2-RM-dJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9f4-z5-JtF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sage Tap" id="eUD-WW-tDZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="5tR-1K-Dik">
+                                            <connections>
+                                                <action selector="SignOutClick:" destination="NvM-6A-lRe" id="LDv-YL-lKp"/>
+                                                <segue destination="Fxg-Uy-AXk" kind="show" identifier="SignOutSegue" id="voa-0M-ScI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBM-nC-sfl">
+                                <rect key="frame" x="16" y="98" width="343" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.54523503900350678" blue="0.18003678471586682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="57"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Play Game"/>
+                                <connections>
+                                    <action selector="PlayBtnClick:" destination="NvM-6A-lRe" eventType="touchUpInside" id="4XA-no-FMy"/>
+                                    <action selector="PlayGameClick:" destination="NvM-6A-lRe" eventType="touchUpInside" id="xJw-aj-EV0"/>
+                                    <segue destination="65T-Lk-nr5" kind="show" identifier="PlayGameSeque" id="VLg-U6-E3i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Ww-ewf">
+                                <rect key="frame" x="16" y="568" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.54523503900350678" blue="0.18003678471586682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="User Profile">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gfy-KI-sLs" kind="show" identifier="UserProfile" id="zoK-eK-hcM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nSo-oR-JhQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJq-Ld-fZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="-949"/>
+        </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="tUR-K0-hb8">
+            <objects>
+                <viewController title="User Profile View Controller" id="gfy-KI-sLs" customClass="UserProfileViewController" customModule="SageTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="b6M-AN-36b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="N6h-ZT-0sI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tk-e1-xM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="-949"/>
+        </scene>
         <!--GameCard-->
         <scene sceneID="AYo-jW-dyC">
             <objects>
-                <viewController title="GameCard" id="65T-Lk-nr5" sceneMemberID="viewController">
+                <viewController title="GameCard" id="65T-Lk-nr5" customClass="GameCardViewController" customModule="SageTap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EqI-Ns-bau">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,10 +279,21 @@
                         <viewLayoutGuide key="safeArea" id="ZaY-Us-4bP"/>
                     </view>
                     <navigationItem key="navigationItem" id="2VI-Ky-ibf"/>
+                    <connections>
+                        <outlet property="option1Outlet" destination="t5h-Bt-0X3" id="3CA-h3-5o7"/>
+                        <outlet property="option2Outlet" destination="HZE-SR-OLu" id="oAs-Ik-Igh"/>
+                        <outlet property="option3Outlet" destination="jyb-dQ-gj9" id="ekl-d8-bCo"/>
+                        <outlet property="option4Outlet" destination="zZ6-ZR-7uD" id="NWR-fS-Njr"/>
+                        <outlet property="questionOutlet" destination="qcW-F4-nJ0" id="07z-qu-Dgg"/>
+                        <outlet property="timerOutlet" destination="NaN-aJ-6De" id="IDV-R0-lnw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRu-7X-CAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="-193"/>
+            <point key="canvasLocation" x="1446" y="604"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VLg-U6-E3i"/>
+    </inferredMetricsTieBreakers>
 </document>

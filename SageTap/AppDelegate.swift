@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // Check for a CURRENT LOGIN TOKEN
-        //MyFirebase.shared.addUserListener(loggedIn: false)
+        MyFirebase.shared.addUserListener(loggedIn: false)
         return true
     }
     

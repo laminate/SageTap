@@ -28,14 +28,14 @@ class VerifyCodeViewController: UIViewController {
         Auth.auth().signIn(with: credential) {(user, error) in
             if error != nil{
                 print("error: \(String(describing: error?.localizedDescription))")
-               } else {
+            } else {
                 print("Phone number: \(String(describing: user?.phoneNumber))")
                 let userInfo = user?.providerData[0]
                 print("Provider ID: \(String(describing: userInfo?.providerID))")
-                //self.performSegue(withIdentifier: "LoggedInViewController", sender: Any?.self)
+                self.performSegue(withIdentifier: "VerifiedSeque", sender: Any?.self)
                 //moveToCreateUserProfileNameWindow()
+            }
         }
-      }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
