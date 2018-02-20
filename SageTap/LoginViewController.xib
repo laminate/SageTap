@@ -36,7 +36,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FNTSYlogo" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-xs-HGN">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgridlogo" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-xs-HGN">
                     <rect key="frame" x="16" y="572" width="343" height="75"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="Ypd-6N-CfR"/>
@@ -44,7 +44,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
                     <rect key="frame" x="16" y="192" width="343" height="42"/>
-                    <color key="backgroundColor" red="0.044553779065608978" green="0.83508628606796265" blue="0.23315194249153137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.99942058324813843" green="0.11227432638406754" blue="0.10697480291128159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="ZM5-gV-JhG"/>
                     </constraints>
@@ -77,6 +77,6 @@
         </view>
     </objects>
     <resources>
-        <image name="FNTSYlogo" width="233" height="56"/>
+        <image name="sportsgridlogo" width="183" height="56"/>
     </resources>
 </document>
