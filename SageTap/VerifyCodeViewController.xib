@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,7 +39,7 @@
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
-                    <rect key="frame" x="75" y="179" width="225" height="30"/>
+                    <rect key="frame" x="75" y="192" width="225" height="30"/>
                     <color key="backgroundColor" red="0.99942058320000005" green="0.1122743264" blue="0.1069748029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ReO-3i-44s"/>
@@ -51,8 +52,11 @@
                         <action selector="verifyCodeBtn:" destination="-1" eventType="touchUpInside" id="2gU-ay-3uk"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rotologo" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-9g-7Sq">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgridlogo" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-9g-7Sq">
                     <rect key="frame" x="16" y="572" width="343" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="FwT-rG-qgY"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,8 +67,10 @@
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="Kio-1D-HRZ"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R1f-wd-Wn7"/>
                 <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="15" id="V1O-VM-8yO"/>
+                <constraint firstItem="rb0-9g-7Sq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Wke-bM-Ncf"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bMf-su-rge"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="mhP-vp-iyB"/>
+                <constraint firstAttribute="bottom" secondItem="rb0-9g-7Sq" secondAttribute="bottom" constant="20" symbolic="YES" id="seR-kM-xaa"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="fgT-Td-qva" secondAttribute="bottom" constant="66" id="tgu-sF-FiD"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="uat-qU-kKN"/>
             </constraints>
@@ -73,6 +79,6 @@
         </view>
     </objects>
     <resources>
-        <image name="rotologo" width="414" height="84"/>
+        <image name="sportsgridlogo" width="183" height="56"/>
     </resources>
 </document>
