@@ -36,7 +36,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwB-pZ-jJS">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44.5"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <items>
                         <navigationItem title="Sage Tap" id="VM0-R1-1va">
                             <barButtonItem key="rightBarButtonItem" title="Profile" id="ZeA-Ap-QUb">
@@ -95,7 +95,7 @@
                     <rect key="frame" x="16" y="559" width="343" height="11"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="11" id="EJo-Ws-iQ0"/>
+                        <constraint firstAttribute="height" constant="11" id="Tql-Mc-zQi"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal">
@@ -103,7 +103,7 @@
                     </state>
                 </button>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dx-0l-ebw">
-                    <rect key="frame" x="0.0" y="64.5" width="375" height="208.5"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="209"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="1Dx-0l-ebw" secondAttribute="height" multiplier="375:209" id="AtR-A0-Mxj"/>
@@ -121,43 +121,47 @@
                     <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <size key="shadowOffset" width="3" height="2"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgridlogo" highlightedImage="sportsgridlogo" translatesAutoresizingMaskIntoConstraints="NO" id="bh9-Ao-mKt">
-                    <rect key="frame" x="16" y="595" width="343" height="56"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sg-gsuite" translatesAutoresizingMaskIntoConstraints="NO" id="bh9-Ao-mKt">
+                    <rect key="frame" x="0.0" y="578" width="375" height="89"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="bh9-Ao-mKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1Gv-w0-wij"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1qu-o8-WhA"/>
                 <constraint firstItem="Z3H-7t-SX6" firstAttribute="leading" secondItem="Hqg-oe-ee0" secondAttribute="leading" id="4b7-vF-oNe"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="59U-a9-6DB"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6bq-dl-M52"/>
                 <constraint firstItem="Z3H-7t-SX6" firstAttribute="top" secondItem="d01-gd-4l4" secondAttribute="bottom" constant="8" id="7yv-qW-Eck"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="trailing" secondItem="sjf-wc-vP7" secondAttribute="trailing" id="8aw-ul-fWl"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="top" secondItem="KwB-pZ-jJS" secondAttribute="bottom" id="Bs9-Ih-Xoc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bh9-Ao-mKt" secondAttribute="trailing" constant="16" id="DhQ-3z-sLa"/>
-                <constraint firstItem="dlA-B5-wtI" firstAttribute="leading" secondItem="Hqg-oe-ee0" secondAttribute="leading" id="EJm-ZT-QRm"/>
+                <constraint firstAttribute="bottom" secondItem="dlA-B5-wtI" secondAttribute="bottom" constant="97" id="DFj-IE-OLo"/>
                 <constraint firstItem="d01-gd-4l4" firstAttribute="top" secondItem="1Dx-0l-ebw" secondAttribute="bottom" constant="8" symbolic="YES" id="Eo9-nu-OV1"/>
                 <constraint firstItem="Z3H-7t-SX6" firstAttribute="trailing" secondItem="TSV-bj-Kbn" secondAttribute="trailing" id="Fdi-fW-o8d"/>
                 <constraint firstItem="Z3H-7t-SX6" firstAttribute="leading" secondItem="TSV-bj-Kbn" secondAttribute="leading" id="Fq2-g0-6PP"/>
+                <constraint firstItem="dlA-B5-wtI" firstAttribute="leading" secondItem="Hqg-oe-ee0" secondAttribute="leading" id="Hzj-Ru-de8"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="L1u-vg-ojC"/>
                 <constraint firstItem="Z3H-7t-SX6" firstAttribute="trailing" secondItem="Hqg-oe-ee0" secondAttribute="trailing" id="M9M-B1-idw"/>
                 <constraint firstItem="TSV-bj-Kbn" firstAttribute="trailing" secondItem="d01-gd-4l4" secondAttribute="trailing" id="NJw-OA-Jiw"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="top" secondItem="dlA-B5-wtI" secondAttribute="bottom" constant="8" symbolic="YES" id="QGI-dj-CAv"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qbx-tJ-PAJ"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="leading" secondItem="1Dx-0l-ebw" secondAttribute="leading" id="UUX-Zb-tGE"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="bottom" secondItem="1Dx-0l-ebw" secondAttribute="top" id="W4g-ME-Lu9"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="top" secondItem="KwB-pZ-jJS" secondAttribute="bottom" id="WEz-0G-xXB"/>
                 <constraint firstItem="d01-gd-4l4" firstAttribute="top" secondItem="1Dx-0l-ebw" secondAttribute="bottom" constant="8" id="XY9-fP-Gs5"/>
                 <constraint firstItem="TSV-bj-Kbn" firstAttribute="centerX" secondItem="1Dx-0l-ebw" secondAttribute="centerX" id="d81-CI-2ee"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eHf-nR-jlA"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ekW-mW-wAW"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="glz-7Y-Joc"/>
                 <constraint firstItem="TSV-bj-Kbn" firstAttribute="top" secondItem="Z3H-7t-SX6" secondAttribute="bottom" constant="22" id="hLQ-vn-7eS"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="trailing" secondItem="sjf-wc-vP7" secondAttribute="trailing" id="iC9-GK-evs"/>
                 <constraint firstAttribute="bottom" secondItem="Z3H-7t-SX6" secondAttribute="bottom" constant="232" id="jeS-aR-yd1"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jyB-ML-WgG"/>
-                <constraint firstItem="dlA-B5-wtI" firstAttribute="centerX" secondItem="1Dx-0l-ebw" secondAttribute="centerX" id="kw3-A6-sOC"/>
+                <constraint firstItem="dlA-B5-wtI" firstAttribute="trailing" secondItem="Hqg-oe-ee0" secondAttribute="trailing" id="kHz-NC-PAY"/>
                 <constraint firstItem="KwB-pZ-jJS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lIT-Ev-Sy4"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bh9-Ao-mKt" secondAttribute="bottom" constant="16" id="luF-6j-QWa"/>
-                <constraint firstItem="dlA-B5-wtI" firstAttribute="top" secondItem="Hqg-oe-ee0" secondAttribute="bottom" constant="4" id="n4g-VK-fb5"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nLS-cs-IXv"/>
                 <constraint firstItem="TSV-bj-Kbn" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="oWl-Oz-aeY"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p5O-C9-neX"/>
+                <constraint firstItem="bh9-Ao-mKt" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="qNB-DJ-0nP"/>
                 <constraint firstItem="Hqg-oe-ee0" firstAttribute="top" secondItem="TSV-bj-Kbn" secondAttribute="bottom" constant="23" id="s6X-sM-z8f"/>
                 <constraint firstItem="1Dx-0l-ebw" firstAttribute="bottom" secondItem="sjf-wc-vP7" secondAttribute="bottom" id="tHz-L9-PzS"/>
                 <constraint firstItem="TSV-bj-Kbn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="xMr-Iq-DOt"/>
@@ -188,6 +192,6 @@
     </objects>
     <resources>
         <image name="rotologo" width="414" height="84"/>
-        <image name="sportsgridlogo" width="183" height="56"/>
+        <image name="sg-gsuite" width="320" height="132"/>
     </resources>
 </document>

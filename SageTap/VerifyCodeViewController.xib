@@ -39,7 +39,7 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zx-Ax-x7x">
                     <rect key="frame" x="75" y="192" width="225" height="30"/>
-                    <color key="backgroundColor" red="0.99942058320000005" green="0.1122743264" blue="0.1069748029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.47681456804275513" green="0.78696328401565552" blue="0.26260453462600708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ReO-3i-44s"/>
                     </constraints>
@@ -51,22 +51,22 @@
                         <action selector="verifyCodeBtn:" destination="-1" eventType="touchUpInside" id="2gU-ay-3uk"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgridlogo" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-9g-7Sq">
-                    <rect key="frame" x="16" y="595" width="343" height="56"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsgrid-gsuite" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-9g-7Sq">
+                    <rect key="frame" x="16" y="535" width="343" height="132"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="rb0-9g-7Sq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="87R-nZ-udW"/>
+                <constraint firstItem="rb0-9g-7Sq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6sZ-tT-Y66"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rb0-9g-7Sq" secondAttribute="trailing" constant="16" id="EZO-6k-aDp"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="5zx-Ax-x7x" secondAttribute="leading" id="HCJ-fb-c9z"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JfL-6H-uhJ"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="centerX" secondItem="fgT-Td-qva" secondAttribute="centerX" id="Kio-1D-HRZ"/>
+                <constraint firstItem="rb0-9g-7Sq" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="QR7-Sc-ci3"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R1f-wd-Wn7"/>
                 <constraint firstItem="5zx-Ax-x7x" firstAttribute="top" secondItem="Q1M-VU-WW9" secondAttribute="bottom" constant="15" id="V1O-VM-8yO"/>
                 <constraint firstItem="fgT-Td-qva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bMf-su-rge"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="mhP-vp-iyB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rb0-9g-7Sq" secondAttribute="trailing" constant="16" id="mzR-cP-tmy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rb0-9g-7Sq" secondAttribute="bottom" constant="16" id="r5W-eK-tVW"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="top" secondItem="fgT-Td-qva" secondAttribute="bottom" constant="66" id="tgu-sF-FiD"/>
                 <constraint firstItem="Q1M-VU-WW9" firstAttribute="trailing" secondItem="5zx-Ax-x7x" secondAttribute="trailing" id="uat-qU-kKN"/>
             </constraints>
@@ -75,6 +75,6 @@
         </view>
     </objects>
     <resources>
-        <image name="sportsgridlogo" width="183" height="56"/>
+        <image name="sportsgrid-gsuite" width="320" height="132"/>
     </resources>
 </document>
