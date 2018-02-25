@@ -1,0 +1,42 @@
+From 7eb0e92d3128353aabf8190d1f3dde7b9a2642f5 Mon Sep 17 00:00:00 2001
+From: Matt Scott <mjscott4242@gmail.com>
+Date: Sat, 24 Feb 2018 23:57:35 -0600
+Subject: [PATCH] Undo Matt Local Provision File
+
+---
+ SageTap.xcodeproj/project.pbxproj | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/SageTap.xcodeproj/project.pbxproj b/SageTap.xcodeproj/project.pbxproj
+index d25bfd6..27ae007 100644
+--- a/SageTap.xcodeproj/project.pbxproj
++++ b/SageTap.xcodeproj/project.pbxproj
+@@ -427,10 +427,10 @@
+ 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
+ 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+ 				CODE_SIGN_STYLE = Automatic;
+-				DEVELOPMENT_TEAM = 7JY7J83AV9;
++				DEVELOPMENT_TEAM = 9K587MAEV8;
+ 				INFOPLIST_FILE = SageTap/Info.plist;
+ 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+-				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
++				PRODUCT_BUNDLE_IDENTIFIER = Sage-Tap-LLC.SageTap-stp;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SWIFT_VERSION = 4.0;
+@@ -447,10 +447,10 @@
+ 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
+ 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+ 				CODE_SIGN_STYLE = Automatic;
+-				DEVELOPMENT_TEAM = 7JY7J83AV9;
++				DEVELOPMENT_TEAM = 9K587MAEV8;
+ 				INFOPLIST_FILE = SageTap/Info.plist;
+ 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+-				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
++				PRODUCT_BUNDLE_IDENTIFIER = Sage-Tap-LLC.SageTap-stp;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SWIFT_VERSION = 4.0;
+-- 
+2.14.3 (Apple Git-98)
+

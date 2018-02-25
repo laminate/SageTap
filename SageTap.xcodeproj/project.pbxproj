@@ -427,10 +427,10 @@
 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JY7J83AV9;
+				DEVELOPMENT_TEAM = 9K587MAEV8;
 				INFOPLIST_FILE = SageTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
+				PRODUCT_BUNDLE_IDENTIFIER = Sage-Tap-LLC.SageTap-stp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -447,10 +447,10 @@
 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JY7J83AV9;
+				DEVELOPMENT_TEAM = 9K587MAEV8;
 				INFOPLIST_FILE = SageTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
+				PRODUCT_BUNDLE_IDENTIFIER = Sage-Tap-LLC.SageTap-stp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
