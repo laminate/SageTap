@@ -24,6 +24,7 @@
 		23FF3A9020363EEB0068494C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FF3A8F20363EEB0068494C /* MediaPlayer.framework */; };
 		F41EB777203A0C6E004CAC7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41EB776203A0C6E004CAC7B /* Main.storyboard */; };
 		F46F0AF12039269D00B5A308 /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F0AF02039269D00B5A308 /* GameCard.swift */; };
+		F493B96420427DD900739F93 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493B96320427DD900739F93 /* UIViewController.swift */; };
 		FE9B0D96797B43238F174815 /* Pods_SageTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB1D18905EE47044BA6CB1A /* Pods_SageTap.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		D21FA93E2E51BB9879002D7B /* Pods-SageTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageTap.release.xcconfig"; path = "Pods/Target Support Files/Pods-SageTap/Pods-SageTap.release.xcconfig"; sourceTree = "<group>"; };
 		F41EB776203A0C6E004CAC7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F46F0AF02039269D00B5A308 /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
+		F493B96320427DD900739F93 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				232E38AD20324A910030EB0A /* default.xib */,
 				23FF3A8C2036322B0068494C /* CreateUserProfileNameViewController.xib */,
 				F46F0AF02039269D00B5A308 /* GameCard.swift */,
+				F493B96320427DD900739F93 /* UIViewController.swift */,
 			);
 			path = SageTap;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F493B96420427DD900739F93 /* UIViewController.swift in Sources */,
 				232E38B420324D150030EB0A /* LoggedInViewController.swift in Sources */,
 				232E38B220324D110030EB0A /* LoginViewController.swift in Sources */,
 				232E38BE20324DFF0030EB0A /* MyFirebase.swift in Sources */,
@@ -423,10 +427,10 @@
 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9K587MAEV8;
+				DEVELOPMENT_TEAM = 7JY7J83AV9;
 				INFOPLIST_FILE = SageTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sage-Tap-LLC.SageTap-stp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -443,10 +447,10 @@
 				CODE_SIGN_ENTITLEMENTS = SageTap/SageTap.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9K587MAEV8;
+				DEVELOPMENT_TEAM = 7JY7J83AV9;
 				INFOPLIST_FILE = SageTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sage-Tap-LLC.SageTap-stp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagetap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

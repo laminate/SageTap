@@ -21,7 +21,10 @@ class VerifyCodeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-   
+    @IBAction func VerifyCancel(_ sender: Any) {
+        performSegue(withIdentifier: "VerifyCancelSegue", sender: self)
+    }
+    
     @IBAction func verifyCodeBtn(_ sender: Any) {
         let defaults = UserDefaults.standard
         let credential: PhoneAuthCredential = PhoneAuthProvider.provider().credential(withVerificationID: defaults.string(forKey: "authVID")!, verificationCode: verifyCode.text!)

@@ -44,8 +44,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendCode:" destination="Fxg-Uy-AXk" eventType="touchUpInside" id="tpc-q9-tmI"/>
-                                    <segue destination="kik-IR-7G0" kind="show" identifier="VerifyCodeSegue" id="CXE-ze-gyf"/>
+                                    <action selector="sendCode:" destination="Fxg-Uy-AXk" eventType="touchUpInside" id="PJY-0S-2Ah"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4n-g0-YPD">
@@ -77,8 +76,9 @@
                         <viewLayoutGuide key="safeArea" id="Nqb-I9-PuW"/>
                     </view>
                     <connections>
-                        <outlet property="phoneNum" destination="azm-Qd-jbV" id="Xmj-M9-qqy"/>
+                        <outlet property="phoneNum" destination="azm-Qd-jbV" id="zdB-TO-hjP"/>
                         <segue destination="65T-Lk-nr5" kind="show" identifier="AnonymousLogin" id="Rcr-WR-5Wa"/>
+                        <segue destination="kik-IR-7G0" kind="show" identifier="VerifyCodeSeque" id="8zh-aw-y87"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SK7-hu-iHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,7 +97,12 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Sage Tap" id="dth-L2-1gB">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8en-j4-O5E"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8en-j4-O5E">
+                                            <connections>
+                                                <action selector="VerifyCancel:" destination="kik-IR-7G0" id="dTx-Zb-O2f"/>
+                                                <segue destination="Fxg-Uy-AXk" kind="show" identifier="VerifyCancelSegue" id="kHO-L5-uVR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -119,7 +124,6 @@
                                 </state>
                                 <connections>
                                     <action selector="verifyCodeBtn:" destination="kik-IR-7G0" eventType="touchUpInside" id="rOa-I1-gMA"/>
-                                    <segue destination="NvM-6A-lRe" kind="show" identifier="VerifiedSeque" id="ZiF-jV-oIY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,6 +143,7 @@
                     </view>
                     <connections>
                         <outlet property="verifyCode" destination="tbC-Qi-NKx" id="mQ7-OO-Aro"/>
+                        <segue destination="NvM-6A-lRe" kind="show" identifier="VerifiedSeque" id="aP1-SS-4wu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBc-rq-vy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,9 +180,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Play Game"/>
                                 <connections>
-                                    <action selector="PlayBtnClick:" destination="NvM-6A-lRe" eventType="touchUpInside" id="4XA-no-FMy"/>
-                                    <action selector="PlayGameClick:" destination="NvM-6A-lRe" eventType="touchUpInside" id="xJw-aj-EV0"/>
-                                    <segue destination="65T-Lk-nr5" kind="show" identifier="PlayGameSeque" id="VLg-U6-E3i"/>
+                                    <segue destination="65T-Lk-nr5" kind="show" identifier="PlayGameSegue" id="7eJ-w5-s0N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Ww-ewf">
@@ -201,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJq-Ld-fZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="-949"/>
+            <point key="canvasLocation" x="1318" y="-1013"/>
         </scene>
         <!--User Profile View Controller-->
         <scene sceneID="tUR-K0-hb8">
@@ -290,10 +293,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRu-7X-CAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="604"/>
+            <point key="canvasLocation" x="2140" y="-192"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLg-U6-E3i"/>
+        <segue reference="7eJ-w5-s0N"/>
+        <segue reference="voa-0M-ScI"/>
     </inferredMetricsTieBreakers>
 </document>
