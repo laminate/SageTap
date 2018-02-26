@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  LoggedInViewController / MainViewController.swift
 //  SageTap
 //  Copyright © 2018 Sage Tap LLC. All rights reserved.
 //
@@ -7,9 +7,13 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import SwiftyStoreKit
+
+
 
 class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
     
+    @IBOutlet weak var buyLifeBtn: UIButton!
     @IBOutlet weak var userGameID: UILabel!
     var usergameid = String()
     
@@ -17,35 +21,48 @@ class LoggedInViewController: UIViewController, GIDSignInUIDelegate {
         moveToGameCardWindow()
     }
     
-  
+  let inAppPurchaseIDs = [
+    ["com.SageTapLLC.SageTapstp.5lives"]
+    ]
+    
     let signOutButton = UIButton()
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
      
-
-        
-        navigationItem.title = "Sage Tap"
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = .black
-
-    let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
-        navigationItem.titleView = titleLabel
-        titleLabel.text = "Sage Tap"
-        titleLabel.textAlignment = .center
-        titleLabel.textColor = .orange
-        
+        SwiftyStoreKit.retrieveProductsInfo([inAppPurchaseIDs[0][0]]) { result in
+            if let product = result.retrievedProducts.first {
+                let priceString = product.localizedPrice!
+                print("Product: \(product.localizedDescription), price: \(priceString)")
+                self.buyLifeBtn.setTitle("\(product.localizedDescription) -\(priceString)", for: .normal)
+            }
+            else if let invalidProductId = result.invalidProductIDs.first {
+                print("Invalid product identifier: \(invalidProductId)")
+            }
+            else {
+                print("Error: \(String(describing: result.error))")
+            }
+        }
 
     }
     
+    @IBAction func buyLIfeAction(_ sender: Any) {
+    }
+    
+    
+    //LOG OUT
     @IBAction func signOutBtn(_ sender: Any) {
     logOut()
     }
+    
     @objc func logOut() {
 
         MyFirebase.shared.logOut()
 
     }
+
 }
-
-

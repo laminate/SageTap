@@ -54,6 +54,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - SwiftMessages (4.1.0)
+  - SwiftyStoreKit (0.13.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - Firebase/Database
   - GoogleSignIn
   - SwiftMessages
+  - SwiftyStoreKit
 
 SPEC CHECKSUMS:
   Firebase: 7d3b8cd837ad9fcd391657734c0d56dab8e9a5a3
@@ -76,7 +78,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
+  SwiftyStoreKit: df6a58aba530128e1c5d5ae4fe7d191e5ac50d5d
 
-PODFILE CHECKSUM: 1a1d823a13f8a2dbed3a3cc73a6f78813cc8b87d
+PODFILE CHECKSUM: c91901804406e34bcbcece37165812e4fd9cf251
 
 COCOAPODS: 1.4.0

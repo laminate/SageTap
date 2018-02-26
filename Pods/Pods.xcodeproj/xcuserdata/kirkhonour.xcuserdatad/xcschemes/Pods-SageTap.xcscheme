@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C7EAF71FD5B7783F7FA52F698E53E83"
+               BlueprintIdentifier = "C6B048198645822406EC745B06016CAB"
                BuildableName = "Pods_SageTap.framework"
                BlueprintName = "Pods-SageTap"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C7EAF71FD5B7783F7FA52F698E53E83"
+            BlueprintIdentifier = "C6B048198645822406EC745B06016CAB"
             BuildableName = "Pods_SageTap.framework"
             BlueprintName = "Pods-SageTap"
             ReferencedContainer = "container:Pods.xcodeproj">

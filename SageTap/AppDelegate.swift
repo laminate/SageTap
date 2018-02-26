@@ -11,6 +11,7 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseDatabase
 import UserNotifications
+import SwiftyStoreKit
 //import GoogleSignIn
 
 

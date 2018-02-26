@@ -50,7 +50,7 @@ class GameCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://youtu.be/mYmD-EDJcXo")
+        let url = URL(string: "https://www.youtube.com/embed/6ueTYD2x1PM")
         let request = URLRequest(url: url!)
         
         webview.load(request)

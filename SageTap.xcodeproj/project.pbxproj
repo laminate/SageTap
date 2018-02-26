@@ -102,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				23FF3A862035F2D70068494C /* SageTap.entitlements */,
-				23FF3A822035E7450068494C /* GoogleService-Info.plist */,
 				2304240C2032432C007D574E /* AppDelegate.swift */,
 				232E38B120324D110030EB0A /* LoginViewController.swift */,
 				23649B2A20353F280047CDB3 /* VerifyCodeViewController.swift */,
@@ -118,6 +117,7 @@
 				230424132032432C007D574E /* Assets.xcassets */,
 				230424152032432C007D574E /* LaunchScreen.storyboard */,
 				230424182032432C007D574E /* Info.plist */,
+				23FF3A822035E7450068494C /* GoogleService-Info.plist */,
 				232E38AD20324A910030EB0A /* default.xib */,
 				23C3844E2033A5CD007C0449 /* GameCardViewController.xib */,
 				23C3845A2033CF21007C0449 /* LoggedInViewController.xib */,
@@ -263,6 +263,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -272,6 +273,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
